@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let N = parseInt(prompt("Nhập Số N"));
+let i=2;
+let flag=true;
+
+for (i; i < N; i++) {
+    console.log(i)
+    if (N % i === 0) {
+        flag = false;
+        break;
+    }
+}
+    if (flag) {
+
+
+        document.write("Hắn là số nguyeen tố");
+    } else {
+        document.write("Hắn khong phải là số nguyên tố");
+    }
+
+
+</script>
+
+</body>
+</html>

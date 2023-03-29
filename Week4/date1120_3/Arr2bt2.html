@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+    function feettometter(foot) {
+        let met = 0.305 * foot;
+        return met;
+
+    }
+
+    function mettertofeet(met) {
+        let feet = 3.279* met;
+        return feet;
+
+    }
+
+    let feet =+prompt("Nhập feet:");
+    document.getElementById("result").innerHTML = feed + "foot" + "=" +feettometter( "metter"+;
+    let met =+prompt("Nhập met:");
+    document.getElementById("result").innerHTML = met + "metter" + feet + "foot";
+</script>
+
+</body>
+</html>

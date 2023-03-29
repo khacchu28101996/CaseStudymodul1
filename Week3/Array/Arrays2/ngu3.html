@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="array"></p>
+
+<script>
+    let arrays = [[3, 2, 3, 5, 9], [1, 2, 6, 4, 3, 1, 5]];
+    let max = arrays[0][0];
+    let min = arrays[0][0];
+
+    for (let i = 0; i < arrays.length; i++) {
+        for (let j = 1; j < arrays[i].length; j++) {
+            if (max < arrays[i][j]) {
+                max = arrays[i][j];
+            }
+            if (min > arrays[i][j]) {
+                min = arrays[i][j];
+            }
+
+        }
+    }
+    document.getElementById("array").innerHTML = "Max là lá la là la:" + max + "<br>" + "Min là lá la là la:" + min;
+</script>
+</body>
+</html>

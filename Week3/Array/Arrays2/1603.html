@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>16-03</title>
+</head>
+<body>
+<p id="array"></p>
+<script>
+    // 1.Khởi tạo mảng có độ dài nhập từ bàn phím
+    //
+    // let arr = new Array(+prompt("Nhập độ dài của mảng:"));
+    // for (let i = 0; i< arr.length;i++){
+    //     arr[i]= prompt("Nhập Element:");
+    // }
+    // document.getElementById("array").innerHTML= arr;
+
+    //2. Cho mảng [5,3,8,2,7]
+    // ĐỔi vị trí của s lớn nhất với vị trí của số nhỏ nhất
+    let arr = [5, 3, 8, 2, 7];
+    let max = arr[0];
+    let min = arr[0];
+    let index1 = 0;
+    let index2 = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+            index1 = i;
+
+        }
+    }
+    console.log(max);
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < min) {
+            min = arr[i];
+            index2 = i;
+        }
+    }
+    console.log(min);
+    arr[index1] = min;
+    arr[index2] = max;
+    console.log(arr);
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

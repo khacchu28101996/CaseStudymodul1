@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="text" name="" id="nhap"></label>
+<button onclick="translate()">Tran sờ lết</button>
+<p id="result"></p>
+<script>
+  function translate() {
+    let arrays_eng = ["school","student","hello"];
+    let arrays_viet = ["trường học","học sinh","xin chào"];
+    let nhap = document.getElementById("nhap").value;
+    let indexx_eng = 0;
+    let result = "";
+    for (let i = 0; i < arrays_eng.length; i++) {
+      if (nhap === arrays_eng[i]) {
+        indexx_eng = i;
+        for (let j = 0; j < arrays_viet.length; j++) {
+          if (indexx_eng === j) {
+            result = arrays_viet[j];
+          }
+        }
+      }
+    }
+    document.getElementById("result").innerHTML = result;
+  }translate();
+</script>
+
+</body>
+</html>

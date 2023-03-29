@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CodeGym Bookstore - Truyện Ngôn Tình</title>
+  <link rel="stylesheet" href="Case1.css">
+
+</head>
+
+<body>
+<header>
+  <nav>
+    <div class="img-nav"><img src="anh/large.png" height="75" width="150"/></div>
+    <div class="content-nav">
+      <ul>
+        <li><a href="#">Trang Chủ</a></li>
+        <li><a href="#">Sản Phẩm</a></li>
+        <li><a href="#">Liên Hệ</a></li>
+        <li><a href="#">Giới Thiệu</a></li>
+        <li><a href="login.html">Đăng Nhập</a></li>
+      </ul>
+      <form>
+        <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
+        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form>
+    </div>
+    <button id="cart">
+      <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+      Giỏ Hàng
+    </button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Giỏ Hàng</h5>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="cart-row">
+            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+            <span class="cart-price cart-header cart-column">Giá</span>
+            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+          </div>
+          <div class="cart-items">
+
+          </div>
+          <div class="cart-total">
+            <strong class="cart-total-title">Tổng Cộng:</strong>
+            <span class="cart-total-price">0VNĐ</span>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+          <button type="button" class="btn btn-primary order">Thanh Toán</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="wrapper">
+    <div class="products">
+      <ul>
+        <li class="main-product">
+          <div class="img-product">
+            <img class="img-prd"
+                 src="https://cdn0.fahasa.com/media/catalog/product/1/9/192229584_1156738771405863_3026333807168990081_n.jpg" width="400" height="600"
+                 alt="">
+          </div>
+          <div class="content-product">
+            <h3 class="content-product-h3">Boss Là Nữ Phụ - Mặc Linh</h3>
+            <div class="content-product-deltals">
+              <div class="price">
+                <span class="money">150000đ</span>
+              </div>
+              <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+            </div>
+          </div>
+
+        <li class="main-product">
+          <div class="img-product">
+            <img class="img-prd"
+                 src="https://vn-live-01.slatic.net/p/d38657778ef5d23df2361f4794dd14c4.jpg" width="400" height="600"
+                 alt="">
+          </div>
+          <div class="content-product">
+            <h3 class="content-product-h3">Chờ Em Lớn Nhé Được Không? - Diệp Lạc Vô Tâm</h3>
+            <div class="content-product-deltals">
+              <div class="price">
+                <span class="money">125000đ</span>
+              </div>
+              <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+            </div>
+          </div>
+        </li>
+        <li class="main-product">
+          <div class="img-product">
+            <img class="img-prd"
+                 src="https://toplist.vn/images/800px/anh-khong-muon-de-em-mot-minh-788935.jpg" width="400" height="600"
+                 alt="">
+          </div>
+          <div class="content-product">
+            <h3 class="content-product-h3">Anh Không Muốn Để Em Một Mình - Diệp Lạc Vô Tâm</h3>
+            <div class="content-product-deltals">
+              <div class="price">
+                <span class="money">75000đ</span>
+              </div>
+              <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+            </div>
+          </div>
+        </li>
+        <li class="main-product no-margin">
+          <div class="img-product">
+            <img class="img-prd"
+                 src="https://thenewsmexico.com/wp-content/uploads/2019/08/truyen-ngon-tinh-viet-nam-8.png" width="400" height="600"
+                 alt="">
+          </div>
+          <div class="content-product">
+            <h3 class="content-product-h3">Nếu Em Là Truyền Thuyết Của Anh - Diệp Tử</h3>
+            <div class="content-product-deltals">
+              <div class="price">
+                <span class="money">89000đ</span>
+              </div>
+              <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+            </div>
+          </div>
+        </li>
+        <li class="main-product">
+          <div class="img-product">
+            <img class="img-prd"
+                 src="https://static.8cache.com/cover/o/eJzLyTDW1823dE6Lt_S2sPRy1A_Lt6gIDwgOyPDx1HeEAg-3dP38tLS0MgPjwKhET_1iA13PZBMjAB8tEbo=/phan-hoa-lau-xanh.jpg" width="400" height="600"
+                 alt="">
+          </div>
+          <div class="content-product">
+            <h3 class="content-product-h3">Phấn Hoa Lầu Xanh - Tào Đình</h3>
+            <div class="content-product-deltals">
+              <div class="price">
+                <span class="money">155000đ</span>
+              </div>
+              <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+            </div>
+          </div>
+        </li>
+        <li class="main-product">
+          <div class="img-product">
+            <img class="img-prd"
+                 src="https://adcbook.net.vn/web/image/product.template/13603/image_1024?unique=1af4c7b" width="400" height="600"
+                 alt="">
+          </div>
+          <div class="content-product">
+            <h3 class="content-product-h3">Anh Trai Em Gái - Tào Đình</h3>
+            <div class="content-product-deltals">
+              <div class="price">
+                <span class="money">115000đ</span>
+              </div>
+              <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+            </div>
+          </div>
+        </li>
+        <li class="main-product">
+          <div class="img-product">
+            <img class="img-prd"
+                 src="https://dauladailuc.com/content/images/2020/02/yeu_anh_hon_ca_tu_than_bia_truoc.jpg" width="400" height="600"
+                 alt="">
+          </div>
+          <div class="content-product">
+            <h3 class="content-product-h3">Yêu Anh Hơn Cả Tử Thần - Tào Đình</h3>
+            <div class="content-product-deltals">
+              <div class="price">
+                <span class="money">129000đ</span>
+              </div>
+              <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+            </div>
+          </div>
+        </li>
+        <li class="main-product no-margin">
+          <div class="img-product">
+            <img class="img-prd"
+                 src="http://truyenngontinh.vn/wp-content/uploads/2019/04/thien-than-sa-nga.jpg"  width="400" height="600"
+                 alt="">
+          </div>
+          <div class="content-product">
+            <h3 class="content-product-h3">Thiên Thần Sa Ngã - Tào Đình</h3>
+            <div class="content-product-deltals">
+              <div class="price">
+                <span class="money">185000đ</span>
+              </div>
+              <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+            </div>
+          </div>
+
+        </li>
+        <li class="main-product">
+          <div class="img-product">
+            <img class="img-prd"
+                 src="https://clst.ac.vn/wp-content/uploads/2019/12/mai-mai-la-bao-xa-550x543.png" width="400" height="600"
+                 alt="">
+          </div>
+          <div class="content-product">
+            <h3 class="content-product-h3">Mãi Mãi Là Bao Xa - Diệp Lạc Vô Tâm</h3>
+            <div class="content-product-deltals">
+              <div class="price">
+                <span class="money">250000đ</span>
+              </div>
+              <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+            </div>
+          </div>
+        <li class="main-product">
+        <div class="img-product">
+          <img class="img-prd"
+               src="https://nxbgd.com.vn/wp-content/uploads/2019/12/tung-co-mot-nguoi-yeu-toi-nhu-sinh-menh-1024x1404.jpg" width="360" height="600"
+               alt="">
+        </div>
+        <div class="content-product">
+          <h3 class="content-product-h3">Từng Có Một Người Yêu Tôi Như Sinh Mệnh - Thư Nghi</h3>
+          <div class="content-product-deltals">
+            <div class="price">
+              <span class="money">150000đ</span>
+            </div>
+            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+          </div>
+        </div>
+        <li class="main-product">
+        <div class="img-product">
+          <img class="img-prd"
+               src="https://salt.tikicdn.com/cache/w1200/ts/product/a1/71/94/f05695bbcf844684af9db10265ca2296.jpg" width="400" height="600"
+               alt="">
+        </div>
+        <div class="content-product">
+          <h3 class="content-product-h3">Đạo Tình - Chu Ngọc</h3>
+          <div class="content-product-deltals">
+            <div class="price">
+              <span class="money">350000đ</span>
+            </div>
+            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+          </div>
+        </div>
+        <li class="main-product">
+        <div class="img-product">
+          <img class="img-prd"
+               src="https://i.pinimg.com/564x/8d/7f/58/8d7f58cb1259aabe8a1f02053ccccd26.jpg" width="" height="600"
+               alt="">
+        </div>
+        <div class="content-product">
+          <h3 class="content-product-h3">Nơi Giấc Mơ Em Thuộc Về - Nghê Dao Hỷ</h3>
+          <div class="content-product-deltals">
+            <div class="price">
+              <span class="money">179000đ</span>
+            </div>
+            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <div>
+      <ul id="lh">
+        <div class="float-contact"> Follow Us
+          <div class="chat-zalo">
+            <a href="https://zalo.me/0966052038" target="_blank"><img src="anh/zalo-icon.png" height="40" width="40"/></a>
+          </div>
+          <div class="chat-facebook">
+            <a href="https://fb.com/conbolac2810" target="_blank"><img src="anh/facebook-icon.png" height="40"
+                                                                       width="40"/></a>
+          </div>
+          <div class="call-hotline">
+            <a href="tel:0966052038"><img src="anh/phone-icon.png" height="40" width="40"/></a>
+          </div>
+      </ul>
+    </div>
+  </footer>
+</header>
+
+</body>
+<script src="case1.js"></script>
+</html>

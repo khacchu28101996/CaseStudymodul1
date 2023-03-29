@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let loops;
+    loops="<table border='1' style='text-align: center' width='300px'>";
+
+    for( i=1;i<=10;i++){
+        loops=loops+"<tr>";
+        for ( j=1;j<=10;j++){
+            loops=loops+"<td>"+i*j+"</td>";
+
+
+        }
+        loops=loops+"</tr>";
+    }
+    loops=loops+"</<table>";
+    document.write(loops);
+</script>
+</body>
+</html>

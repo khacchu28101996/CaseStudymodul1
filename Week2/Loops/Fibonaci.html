@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p><input type="number" id="number"></p>
+
+<script>
+    let number = +document.getElementById("number").value;
+
+    while (number !== -1) {
+        if (number % 2 === 0) {
+            document.getElementById("number").innerHTML = "Hello";
+            break;
+        } else {
+            document.getElementById("number").innerHTML = "Xin  mời nhập lại";
+        }
+    }
+    break;
+
+</script>
+
+</body>
+</html>

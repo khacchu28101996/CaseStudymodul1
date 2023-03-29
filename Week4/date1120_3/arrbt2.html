@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+<p id="ketqua"></p>
+<script>
+    function feetToMetter(feet) {
+        let metter = feet * 0.305;
+        return metter;
+
+    }
+
+    function metterToFeet(metter) {
+        let feet = metter * 3.279;
+        return feet;
+
+    }
+
+    let feet = prompt("Nhập feet:");
+    document.getElementById("result").innerHTML = feet +" " +"foot" + "=" + feetToMetter(feet) + "metter" +"<br>";
+    let metter = prompt("Nhập met:");
+    document.getElementById("ketqua").innerHTML = metter +" "+ "metter" + "=" + metterToFeet(metter) + "foot";
+</script>
+
+</body>
+</html>
